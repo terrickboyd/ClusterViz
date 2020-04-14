@@ -127,41 +127,7 @@ class StartPage(tk.Frame):
                             command=lambda: controller.show_frame("PageTwo"))
         button1.pack()
         button2.pack()
-#        self.menu = Menu(self.controller)
-#        self.controller.config(menu=self.menu)
-#        #create file object for file button and add commands
-#        preprocess = Menu(self.menu)
-#        preprocess.add_command(label='Print')
-#        preprocess.add_command(label='Quit')
-#        preprocess.add_command(label='Save as...')
-#        #file.add_command(label='Exit', command = self.client_exit)
-#        self.menu.add_cascade(label='Program', menu=preprocess)
-#        #create file object for home button
-#        self.home=Menu(self.menu)
-#        self.home.add_command(label='ClusterViz Home')
-#        self.menu.add_cascade(label='Home', menu=self.home)
-#        #create file object for visualization button
-#        visualization=Menu(self.menu)
-#        visualization=Menu(self.menu, tearoff=0)
-#        visualization.add_command(label='TSNE Parameters', command = lambda: self.popupmsg("""T-Distributed Stochastic Neighbor Embedding is a technique which attempts to keep the closest neighbors of each high-dimensional point the same in the low-dimensional projection by using pairwise distances as conditional probabilities of a point neighboring another point. """)
-#        visualization.add_command(label='PCA Parameters', command = lambda: self.popupmsg("""Principal Component Analysis finds the principal components of a dataset. PCA transforms the data into a new, lower-dimensional subspace. In the new coordinate system, the first axis corresponds to the first principal component, which is the component that explains the greatest amount of the variance in the data.""")
-#        visualization.add_command(label='Sparse PCA Parameters', command = lambda: self.popupmsg("""Sparse PCA is a  technique that extends the classic method of principal component analysis (PCA) for the reduction of dimensionality of data by introducing sparsity structures to the input variables.""")
-#        visualization.add_command(label='ISOMAP Parameters', command = lambda: self.popupmsg("""Isomap is a nonlinear dimensionality reduction algorithm used for computing the low-dimensional embedding of a set of high-dimensional data points. The Isomap algorithm provides a simple method for estimating the intrinsic geometry of a data manifold based on a rough estimate of each data point’s neighbors on the manifold. """)
-#        #create file object for tools button
-#        self.tools=Menu(self.menu)
-#        self.tools.add_command(label='Preferences')
-#        self.menu.add_cascade(label='Tools', menu=self.tools)
-#        
-#        #create undo object for undo and add commands
-#        self.edit=Menu(self.menu)
-#        self.edit.add_command(label='Redo')
-#        self.edit.add_command(label='Undo')
-#        self.menu.add_cascade(label='Edit', menu=self.edit)
-#        #create file object for help button
-#        self.help=Menu(self.menu)
-#        self.help.add_command(label='ClusterViz tutorial')
-#        self.help.add_command(label='About...')
-#        self.menu.add_cascade(label='Help', menu=self.help)
+
         
     def popupmsg(self,msg):
         popup = tk.Tk()
